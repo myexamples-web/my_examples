@@ -1,4 +1,4 @@
-## Inhaltsverzeichnis
+# Inhaltsverzeichnis
 
 - [VPS-Server](vps/index.md)
 - [Java Spickzettel](java/index.md)
