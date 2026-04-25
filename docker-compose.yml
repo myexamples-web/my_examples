@@ -1,0 +1,11 @@
+services:
+  mainpage:
+    image: kyasin/my-examples
+    container_name: my-examples
+    restart: always
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
