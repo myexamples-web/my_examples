@@ -1,5 +1,3 @@
-# Examples
-
 ## Inhaltsverzeichnis
 
 - [VPS-Server](vps/index.md)
