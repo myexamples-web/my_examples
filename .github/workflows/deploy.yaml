@@ -35,6 +35,6 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            cd ~/services/examples/main/my_examples
+            cd ~/services/examples/my_examples
             docker compose pull
             docker compose up -d
