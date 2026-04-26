@@ -2,7 +2,7 @@
 
 ## Inhaltsverzeichnis
 
-- [Integrationstests](Integrationstests.md)
+- [Integrationstests](integrationstests.md)
 
 bei Fragen, Anmerkungen oder fehlern in der Dokumentation könnt ihr mich gerne kontaktieren:
 
