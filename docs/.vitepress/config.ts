@@ -36,6 +36,13 @@ export default defineConfig({
                     {text: 'Generics', link: '/java/generics'},
                     {text: 'Lambda', link: '/java/lambda'},
                 ]
+            },
+            {
+                text: "Spring Boot",
+                collapsed: true,
+                items:[
+                    {text: "Integrationstest", link: "springboot/integrationstests"}
+                ]
             }
         ]
     }
