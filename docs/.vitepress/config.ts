@@ -14,7 +14,7 @@ export default defineConfig({
                 text: 'VPS Server',
                 collapsed: true,  // aufgeklappt beim Start, aber zuklappbar
                 items: [
-                    {text: 'Server Aufsetzen', link: '/vps/aerver_aufsetzen'},
+                    {text: 'Server Aufsetzen', link: '/vps/server_aufsetzen'},
                     {text: 'Firewall', link: '/vps/firewall'},
                     {text: 'Benutzer', link: '/vps/benutzer'},
                     {text: 'Docker', link: '/vps/docker'},
