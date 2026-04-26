@@ -3,7 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'My Examples',
   description: 'Dokumentation',
-  srcDir: '.',
+    head: [['link', { rel: 'icon', href: '/favicon.png' }]],  // <-- das hier
+
+    srcDir: '.',
   themeConfig: {
     search: {
       provider: 'local'
