@@ -2,9 +2,9 @@
 
 ## Anmerkung 
 
-Hierbei wird die ufw (Uncomplicated Firewall) 
+Hierbei wird die ufw (Uncomplicated Firewall) verwendet man kann auch andere benutzen 
 
-ufw Installieren und aktivieren
+## ufw Installieren und aktivieren
 
 ```bash
 sudo ufw allow ssh
@@ -17,12 +17,7 @@ status prüfen
 sudo ufw status
 ```
 
-- Eingehende 
-- - 80/443 Erlauben
-- - Rest Ablehnen
-- Ausgehende 
-- - Alles erlauben 
-- SSH erlauben 
+## ufw Konfigurieren 
 
 ```bash
 sudo ufw default deny incoming
@@ -31,6 +26,10 @@ sudo ufw allow 80
 sudo ufw allow 443
 sudo ufw allow ssh
 sudo ufw enable
+```
+
+```bash
+sudo ufw status
 ```
 
 Dann sollte eine Statusabfrage ungefähr folgendes anzeigen 
