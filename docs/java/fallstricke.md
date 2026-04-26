@@ -1,6 +1,6 @@
 # Fallstricke 
 
-### Iterator 
+## Iterator 
 
 Man darf bei einem Iterator nicht die methode `remove` aufrufen von [Collection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html) da dies zu einer ConcurrentModificationException führt 
 
@@ -40,7 +40,7 @@ public class Main {
 }
 ```
 
-desweiteren ist ein Doppeltere `remove` auch nicht erlaubt da dies zu einer IllegalStateException führt 
+des Weiteren ist ein Doppelter `remove` auch nicht erlaubt da dies zu einer IllegalStateException führt 
 
 ```java
 import java.util.Iterator;
@@ -61,7 +61,7 @@ public class Main {
 }
 ```
 
-### Thread sichere Iteration
+## Thread sichere Iteration
 
 ```java
 import java.util.*;

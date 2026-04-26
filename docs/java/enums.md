@@ -1,6 +1,6 @@
 # Enums 
 
-### Ein Enum ist eine aufzählung die mit werten belegt sein kann
+## Enum (Plain Java)
 
 ```java
 private enum ErrorState{
@@ -32,7 +32,7 @@ private enum ErrorState{
 }
 ```
 
-### Mit Lombok eqivalent zu:
+## Enum (Lombok)
 
 ```java
 import lombok.Getter;
@@ -50,7 +50,9 @@ private enum ErrorState {
 }
 ```
 
-### EnumSet um mehrere EnumStates gleichzeitig zu speichern 
+## EnumSet 
+
+Um mehrere EnumStates gleichzeitig zu speichern 
 
 ```java
 import java.util.EnumSet;
@@ -62,6 +64,6 @@ errorStates.remove(ErrorState.OK);
 errorStates.add(ErrorState.UNKNOWN);
 ```
 
-#### Literatur
+## Literatur
 - Der Weg zum Java Profi Auflage 5 
 - - Kapitel 3.4.4 (S.154)
