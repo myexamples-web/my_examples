@@ -28,7 +28,7 @@ Trenne deinen Code in zwei Arten von Repositories:
 - **Infrastruktur-Repo** – enthält alle Docker Compose Dateien, nginx-Configs und Deployment-Skripte
 - **App-Repos** – enthalten den Quellcode deiner Anwendungen (z.B. Java-Projekte)
 
-### Infrastruktur-Repo einrichten
+## Infrastruktur-Repo einrichten
 
 Auf GitHub ein neues privates Repository erstellen (z.B. `homelab-infra`), dann auf dem Server:
 
@@ -89,7 +89,7 @@ Eine typische Pipeline:
 4. Pipeline verbindet sich per SSH zum VPS
 5. Führt `docker compose pull` + `docker compose up -d` aus
 
-### GitHub Actions Workflow erstellen
+## GitHub Actions Workflow erstellen
 
 Im App-Repo:
 
@@ -141,7 +141,7 @@ jobs:
             docker compose up -d
 ```
 
-### SSH Key für GitHub Actions generieren
+## SSH Key für GitHub Actions generieren
 
 Auf dem Server:
 
@@ -153,7 +153,7 @@ cat ~/.ssh/github_actions
 
 Den kompletten Inhalt (von `-----BEGIN` bis `-----END`) kopieren → wird als `VPS_SSH_KEY` Secret gespeichert.
 
-### GitHub Secrets einrichten
+## GitHub Secrets einrichten
 
 Im App-Repo: **Settings → Environments → prod → Add secret**
 
@@ -168,7 +168,7 @@ Im App-Repo: **Settings → Environments → prod → Add secret**
 
 <span style="color:red">Wichtig: </span> Die Secrets müssen im selben Environment angelegt werden das im Workflow unter `environment:` angegeben ist (hier: `prod`).
 
-### docker-compose.yml im Service-Ordner
+## docker-compose.yml im Service-Ordner
 
 Damit der Deploy-Schritt funktioniert, muss eine `docker-compose.yml` im Service-Ordner auf dem Server liegen:
 
@@ -186,7 +186,7 @@ networks:
     external: true
 ```
 
-### Pipeline testen
+## Pipeline testen
 
 Eine kleine Änderung comitten und pushen:
 
