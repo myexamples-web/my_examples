@@ -1,10 +1,10 @@
 # Solid Principals
 
-### Single Responsibility Principle (SRP)
+## Single Responsibility Principle (SRP)
 
 - Eine Klasse sollte nur eine einzige Verantwortung bzw. Aufgabe haben 
 
-#### Antibeispiel:
+## SRP Antibeispiel:
 
 <span style="color: red"> 
 Weil der Controller sowohl Anfragen entgegennimmt als auch die Businesslogik enthält
@@ -27,11 +27,11 @@ public class AntiController {
 }
 ```
 
-### Open/Closed Principle (OCP)
+## Open/Closed Principle (OCP)
 
 - Die Software sollte offen sein für erweiterung aber geschlossen für änderungen
 
-#### Antibeispiel:
+## OCP Antibeispiel:
 
 <span style="color: red"> 
 Erweiterung der Klasse AntiShape erfordert Änderungen an der calculateArea Methode
@@ -52,11 +52,11 @@ public class AntiShape {
 }
 ```
 
-### Liskov Substitution Principle (LSP)
+## Liskov Substitution Principle (LSP)
 
 - Eine Unterklasse sollte eine Oberklasse ohne Probleme ersetzen können
 
-#### Antibeispiel:
+## LSP Antibeispiel:
 
 <span style="color: red"> 
 Weil die Unterklasse Square die Methode setWidth und setHeight überschreibt, führt dies zu
@@ -97,12 +97,12 @@ public class Square extends Rectangle {
 }
 ```
 
-### Interface Segregation Principle (ISP)
+## Interface Segregation Principle (ISP)
 
 - Clients sollten nicht gezwungen sein, Schnittstellen zu implementieren, die sie nicht verwenden
 - Daraus folgt lieber mehrere kleine Interfaces statt ein riesen Interface 
 
-#### Antibeispiel:
+## ISP Antibeispiel:
 
 <span style="color: red">
 Ein Drucker der Farbdruck nicht unterstützt müsste dieses trotzdem implementieren
@@ -115,11 +115,11 @@ public interface AntiPrinter {
 }
 ```
 
-### Dependency Inversion Principle (DIP)
+## Dependency Inversion Principle (DIP)
 
 - Keine Abhängigkeiten von konkreten Klassen, sondern von Abstraktionen (Interfaces oder abstrakte Klassen)
 
-#### Antibeispiel:
+## DIP Antibeispiel:
 
 <span style="color: red">
 Weil die Klasse AntiService direkt von der konkreten Implementierung AntiRepository abhängt, ist
@@ -136,6 +136,6 @@ public class AntiRepository {
 
 besser mit Dependency injection [siehe](https://de.wikipedia.org/wiki/Dependency_Injection)
 
-#### Literatur
+## Literatur
 - Der Weg zum Java Profi Auflage 5
 - - Kapitel 3.5.3 (S.167)
