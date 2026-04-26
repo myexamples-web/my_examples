@@ -1,0 +1,13 @@
+html.sidebar-hidden .VPSidebar {
+  display: none !important;
+}
+
+@media (min-width: 960px) {
+  html.sidebar-hidden .VPContent.has-sidebar .VPDoc {
+    padding-left: 32px !important;
+  }
+
+  html.sidebar-hidden .VPContent.has-sidebar {
+    padding-left: 0 !important;
+  }
+}
