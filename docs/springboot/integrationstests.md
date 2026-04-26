@@ -5,6 +5,8 @@
 Diese Art von Tests schießen eine Anfrage an die API und erstellen von der Response einen Snapshot in späteren verlauf wird dann nurnoch geprüft ob die API wieder die gleiche Response zurückgibt  
 
 <strong>pom:</strong>
+<details>
+<summary>POM</summary>
 
 ```xml
 <dependencyManagment>
@@ -37,6 +39,10 @@ Diese Art von Tests schießen eine Anfrage an die API und erstellen von der Resp
     </dependency>
 </dependencies>
 ```
+</details>
+
+<details>
+<summary>Code</summary>
 
 ```java
 @SpringBootTest
@@ -68,6 +74,8 @@ class IntegrationsTest {
     }
 }
 ```
+
+</details>
 
 <details>
 <summary>Erklärung</summary>
