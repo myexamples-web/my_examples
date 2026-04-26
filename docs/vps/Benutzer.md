@@ -1,25 +1,29 @@
 # Benutzer
 
-### Benutzer einrichten 
-
-- Benutzer erstellen
-- sudo berechtigung hinzufügen   
+## Benutzer einrichten
 
 ```bash
 sudo adduser deinbenutzername
 sudo usermod -aG sudo deinbenutzername
 ```
 
-### Port für SSH umstellen 
+<details>
+<summary>Erklärung</summary>
+    
+    sudo usermod -aG sudo deinbenutzername
+
+Fügt denn benutzer zur Sudo berechtigung gruppe hinzu
+</details>
+
+## Port umstellung für SSH 
 
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
-- SSH port auf 2222 setzten 
-- RootLogin abschalten 
+Port und PermitRootLogin suchen und ändern 
 
-Port und PermitRootLogin suchen und ändern zu wichtig Kommentar entfernen also # wegmachen  
+<strong style="color: red">Wichtig: </strong> Kommentar entfernen  
 
     Port 2222
     PermitRootLogin no
@@ -42,17 +46,11 @@ Erst wenn das klappt die alte Session schließen – sonst ist man ausgesperrt!
 
 Sobald das gemacht wurde muss man den Port immer mit angeben:
 
-Windows 
 ```bash
 ssh benutzername@IP-Adresse -p 2222
 ```
 
-Linux/Mac 
-```bash
-ssh -p 2222 benutzername@IP-Adresse
-```
-
-Optional Automatische Sicherheitsupdates
+## Optional: Automatische Sicherheitsupdates
 
 ```bash
 sudo apt install unattended-upgrades -y
