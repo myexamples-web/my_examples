@@ -6,11 +6,11 @@ Dies ist eine Zusammenführung von Literaturen die ich in meiner laufzeit als wi
 
 ## Inhaltsverzeichnis
 
-- [Enums](ENUMS.md)
-- [SOLID Principles](SOLID.md)
-- [Varianz](VARIANZ.md)
-- [Generics](GENERICS.md)
-- [Lambda](LAMBDA.md)
+- [Enums](enums.md)
+- [SOLID Principles](solid.md)
+- [Varianz](varianz.md)
+- [Generics](generics.md)
+- [Lambda](lambda.md)
 
 bei Fragen, Anmerkungen oder fehlern in der Dokumentation könnt ihr mich gerne kontaktieren:
 
