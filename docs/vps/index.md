@@ -6,16 +6,16 @@ Diese Anleitung beschränkt sich auf die nutzung von Netcup unter der verwendung
 
 ## Inhaltsverzeichnis
 
-- [Server Aufsetzten](Server_Aufsetzen.md)
-- [Firewall](Firewall.md)
-- [(Opional) Benutzer](Benutzer.md)
-- [Docker](Docker.md)
-- [Domain](Domain.md)
-- [Reverse Proxy](Proxy.md)
-- [SSO](SSO.md)
-- [VPN](Vpn.md)
+- [Server Aufsetzten](server_aufsetzen.md)
+- [Firewall](firewall.md)
+- [(Opional) Benutzer](benutzer.md)
+- [Docker](docker.md)
+- [Domain](domain.md)
+- [Reverse Proxy](proxy.md)
+- [SSO](sso.md)
+- [VPN](vpn.md)
 - [Docker Compose Struktur](dcs.md)
-- [CI/CD Pipeline & Repository-Struktur](CICD.md)
+- [CI/CD Pipeline & Repository-Struktur](cicd.md)
 
 
 bei Fragen, Anmerkungen oder fehlern in der Dokumentation könnt ihr mich gerne kontaktieren:
