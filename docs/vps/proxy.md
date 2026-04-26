@@ -2,14 +2,19 @@
 
 wie machen das beispiel mit Portainer einer Managment platform für Docker container 
 
-### nginx Ordnerstruktur
+## nginx Ordnerstruktur
 
-<span style="color:red">Wichtig: </span> domain ersetzten im command
+<span style="color:red">Wichtig: </span> domain.de ersetzten im command
 
 
 ```bash
 mkdir -p ~/nginx/conf.d
 mkdir -p ~/nginx/ssl
+```
+
+## Portainer Konfiguration
+
+```bash
 nano ~/nginx/conf.d/portainer.domain.de.conf
 ```
 
@@ -29,6 +34,37 @@ server {
     }
 }
 ```
+
+<details>
+<summary>Erklärung</summary>
+
+    listen 80;
+
+hört auf dem port 80
+
+    server_name portainer.domain.de;
+
+ist für die Domain portainer.domain.de zuständig 
+
+    proxy_pass http://portainer:9000;
+
+leitet alle anfragen die kommen an den Portainer Container weiter 
+
+        proxy_set_header Host $host;
+
+gibt dem Backend die originale Domain weiter
+
+        proxy_set_header X-Real-IP $remote_addr;
+
+gibt die echte IP des Besuchers weiter
+
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+vollständige IP-Kette bei mehreren Proxies
+
+</details>
+
+## nginx Konfiguration
 
 ```bash
 nano ~/nginx/docker-compose.yml
@@ -54,7 +90,17 @@ networks:
         external: true
 ```
 
-### Netzwerk starten
+<details>
+<summary>Erklärung</summary>
+
+Startet einen nginx Container als reverse Proxy mit folgenden eigenschaften 
+- hört auf 80/443
+- leitet weiter an 
+  - alle Services (conf.d) 
+  - alle ssl Zertifikat in ssl 
+</details>
+
+## Netzwerk starten
 
 ```bash
 sudo apt install --reinstall apparmor -y
@@ -66,7 +112,7 @@ cd ~/nginx
 docker compose up -d
 ```
 
-### Zertifikat erstellen 
+## Zertifikat erstellen 
 
 <span style="color:red">Wichtig: </span> domain ersetzten im command
 
@@ -78,10 +124,11 @@ sudo certbot certonly --standalone -d domain.de -d www.domain.de -d portainer.do
 nano ~/nginx/conf.d/portainer.domain.de.conf
 ```
 
-Die Konfig von vorher wird jetzt ersetzt 
+Die Konfiguration von vorher wird jetzt ersetzt um aus dem HTTP ein HTTPS zu machen 
 
 <span style="color:red">Wichtig: </span> domain ersetzten im command
-```nginx
+
+```yaml
 server {
     listen 80;
     server_name portainer.domain.de;
@@ -130,7 +177,7 @@ networks:
         external: true
 ```
 
-### Portainer starten
+## Portainer starten
 
 ```bash
 docker network create proxy
