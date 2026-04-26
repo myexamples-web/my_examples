@@ -12,6 +12,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: 'VPS Server',
+                collapsed: true,  // aufgeklappt beim Start, aber zuklappbar
                 items: [
                     {text: 'Server Aufsetzen', link: '/vps/Server_Aufsetzen'},
                     {text: 'Firewall', link: '/vps/Firewall'},
@@ -27,6 +28,7 @@ export default defineConfig({
             },
             {
                 text: 'Java',
+                collapsed: true,
                 items: [
                     {text: 'Enums', link: '/java/enums'},
                     {text: 'Firewall', link: '/java/solid'},
