@@ -1,5 +1,7 @@
 # Docker Compose Struktur 
 
+## Ordnerstruktur erstellen
+
 Jeder Service bekommt einen eigenen Ordner mit einer `docker-compose.yml`. Die Grundregeln:
 
 - Jeder Service → eigener Ordner unter `~/services/`
@@ -7,15 +9,13 @@ Jeder Service bekommt einen eigenen Ordner mit einer `docker-compose.yml`. Die G
 - Immer `restart: always` damit der Container nach Neustart automatisch startet
 - Datenpersistenz immer über `volumes`
 
-### Ordnerstruktur erstellen
-
 ```bash
 mkdir -p ~/services/portainer
 mkdir -p ~/services/authentik
 mkdir -p ~/services/grafana
 ```
 
-### Portainer config
+## Portainer config
 
 ```bash
 nano ~/services/portainer/docker-compose.yml
@@ -41,7 +41,7 @@ networks:
     external: true
 ```
 
-### Grafana config
+## Grafana config
 
 ```bash
 nano ~/services/grafana/docker-compose.yml
@@ -68,14 +68,14 @@ networks:
     external: true
 ```
 
-### Services starten
+## Services starten
 
 ```bash
 cd ~/services/portainer && docker compose up -d
 cd ~/services/grafana && docker compose up -d
 ```
 
-### Alle laufenden Container prüfen
+## Alle laufenden Container prüfen
 
 ```bash
 docker ps
