@@ -1,4 +1,4 @@
-# Java Examples
+# Spring Boot Examples
 
 ## Inhaltsverzeichnis
 
