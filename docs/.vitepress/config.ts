@@ -28,11 +28,11 @@ export default defineConfig({
             {
                 text: 'Java',
                 items: [
-                    {text: 'Enums', link: '/java/Enums'},
-                    {text: 'Firewall', link: '/java/Solid'},
-                    {text: 'Benutzer', link: '/java/varianz'},
-                    {text: 'Docker', link: '/java/generics'},
-                    {text: 'Domain', link: '/java/lambda'},
+                    {text: 'Enums', link: '/java/enums'},
+                    {text: 'Firewall', link: '/java/solid'},
+                    {text: 'Varinaz', link: '/java/varianz'},
+                    {text: 'Generics', link: '/java/generics'},
+                    {text: 'Lambda', link: '/java/lambda'},
                 ]
             }
         ]
