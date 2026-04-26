@@ -1,6 +1,6 @@
 # SSO (Single Sign-On)
 
-### Ordnerstruktur 
+## Ordnerstruktur 
 
 ```bash
 mkdir -p ~/authentik
@@ -8,6 +8,11 @@ nano ~/authentik/docker-compose.yml
 ```
 
 in die datei dann folgendes Konfigifurieren 
+
+<span style="color:red">Wichtig: </span> vorher folgendes ändern:
+- `sicherespasswort123` → ein eigenes sicheres Passwort
+- `einlangersecretkey123456789abc` → ein zufälliger langer String, generieren mit:
+
 
 ```yaml
 services:
@@ -70,11 +75,7 @@ networks:
     external: true
 ```
 
-### Config erstellen 
-
-<span style="color:red">Wichtig: </span> vorher folgendes ändern:
-- `sicherespasswort123` → ein eigenes sicheres Passwort
-- `einlangersecretkey123456789abc` → ein zufälliger langer String, generieren mit:
+## Config erstellen 
 
 ```bash
 openssl rand -base64 32
@@ -86,7 +87,7 @@ openssl rand -base64 32
 nano ~/nginx/conf.d/authentik.domain.de.conf
 ```
 
-```nginx
+```yaml
 server {
     listen 80;
     server_name authentik.domain.de;
@@ -110,7 +111,7 @@ server {
 }
 ```
 
-### Authentik starten 
+## Authentik starten 
 
 ```bash
 cd ~/authentik
