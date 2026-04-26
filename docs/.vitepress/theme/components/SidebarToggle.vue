@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
-const hidden = ref(false)
+const hidden = ref(true)
 
 onMounted(() => {
   hidden.value = localStorage.getItem('sidebar-hidden') === 'true'
