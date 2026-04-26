@@ -162,7 +162,7 @@ Im App-Repo: **Settings → Environments → prod → Add secret**
 | `DOCKER_USERNAME` | Docker Hub Benutzername |
 | `DOCKER_PASSWORD` | Docker Hub Passwort |
 | `VPS_HOST` | IP-Adresse des Servers |
-| `VPS_USER` | SSH-Benutzername (z.B. `steuerung`) |
+| `VPS_USER` | SSH-Benutzername |
 | `VPS_SSH_KEY` | Inhalt von `~/.ssh/github_actions` |
 | `VPS_PORT` | SSH-Port (z.B. `2222`) |
 
