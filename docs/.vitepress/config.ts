@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-defineConfig({
+export default defineConfig({
   title: 'My Examples',
   description: 'Dokumentation',
   head: [['link', { rel: 'icon', href: '/favicon.png' }]],
