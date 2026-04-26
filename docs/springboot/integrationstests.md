@@ -4,7 +4,6 @@
 
 Diese Art von Tests schießen eine Anfrage an die API und erstellen von der Response einen Snapshot in späteren verlauf wird dann nurnoch geprüft ob die API wieder die gleiche Response zurückgibt  
 
-<strong>pom:</strong>
 <details>
 <summary>POM</summary>
 
