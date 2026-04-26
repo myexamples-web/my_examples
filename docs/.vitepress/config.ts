@@ -14,16 +14,16 @@ export default defineConfig({
                 text: 'VPS Server',
                 collapsed: true,  // aufgeklappt beim Start, aber zuklappbar
                 items: [
-                    {text: 'Server Aufsetzen', link: '/vps/Server_Aufsetzen'},
-                    {text: 'Firewall', link: '/vps/Firewall'},
-                    {text: 'Benutzer', link: '/vps/Benutzer'},
-                    {text: 'Docker', link: '/vps/Docker'},
-                    {text: 'Domain', link: '/vps/Domain'},
-                    {text: 'Reverse Proxy', link: '/vps/Proxy'},
-                    {text: 'SSO', link: '/vps/SSO'},
-                    {text: 'VPN', link: '/vps/Vpn'},
+                    {text: 'Server Aufsetzen', link: '/vps/aerver_aufsetzen'},
+                    {text: 'Firewall', link: '/vps/firewall'},
+                    {text: 'Benutzer', link: '/vps/benutzer'},
+                    {text: 'Docker', link: '/vps/docker'},
+                    {text: 'Domain', link: '/vps/domain'},
+                    {text: 'Reverse Proxy', link: '/vps/proxy'},
+                    {text: 'SSO', link: '/vps/sso'},
+                    {text: 'VPN', link: '/vps/vpn'},
                     {text: 'Docker Compose Struktur', link: '/vps/dcs'},
-                    {text: 'CI/CD Pipeline', link: '/vps/CICD'},
+                    {text: 'CI/CD Pipeline', link: '/vps/cicd'},
                 ]
             },
             {
