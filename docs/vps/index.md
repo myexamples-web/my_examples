@@ -1,5 +1,9 @@
 # VPS Server
 
+## Anmerkung 
+
+Diese Anleitung beschränkt sich auf die nutzung von Netcup unter der verwendung von Ubuntu andere möglichkeiten sind zwar möglich werden jedoch hier nicht erklärt 
+
 ## Inhaltsverzeichnis
 
 - [Server Aufsetzten](Server_Aufsetzen.md)
