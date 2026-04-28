@@ -31,7 +31,7 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     {text: 'Enums', link: '/java/enums'},
-                    {text: 'Firewall', link: '/java/solid'},
+                    {text: 'Solid', link: '/java/solid'},
                     {text: 'Varinaz', link: '/java/varianz'},
                     {text: 'Generics', link: '/java/generics'},
                     {text: 'Lambda', link: '/java/lambda'},
