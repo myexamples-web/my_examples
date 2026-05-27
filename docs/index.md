@@ -3,6 +3,7 @@
 - [VPS-Server](vps/index.md)
 - [Java Spickzettel](java/index.md)
 - [Spring Boot Examples](springboot/index.md)
+- [Interessante Links](links/index.md)
 
 bei Fragen, Anmerkungen oder fehlern in der Dokumentation könnt ihr mich gerne kontaktieren:
  

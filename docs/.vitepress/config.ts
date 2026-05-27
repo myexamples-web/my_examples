@@ -43,6 +43,10 @@ export default defineConfig({
                 items:[
                     {text: "Integrationstest", link: "springboot/integrationstests"}
                 ]
+            },
+            {
+                text:"Interessante Links",
+                link:"links/index.md"
             }
         ]
     }
